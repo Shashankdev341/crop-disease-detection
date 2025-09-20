@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CropCare - Disease Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>🌱 CropCare • Disease Detector</h1>
+      <p>Upload a leaf image — get diagnosis & prescription</p>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="container grid">
+    <!-- Left: Upload Form -->
+    <section class="card">
+      <h2>Upload Leaf Image</h2>
+      <form id="uploadForm">
+        <label for="fileInput">📂 Choose Leaf Image</label>
+        <input type="file" id="fileInput" accept="image/*">
+        <div id="previewContainer"></div>
+        <button type="submit">Analyze</button>
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <!-- Right: Information -->
+    <section class="card info-card">
+      <h2>How detection works</h2>
+      <div class="info-list">
+        <div class="info-item">💡 Good lighting & focused leaf closeups increase accuracy.</div>
+        <div class="info-item">🍃 Avoid overlapping leaves; use single leaf on plain background.</div>
+        <div class="info-item">📊 Model improves with more labelled images.</div>
+      </div>
+
+      <h2>Disease Catalog</h2>
+      <div class="disease-grid">
+        <div class="disease">
+          <h4>🌿 Healthy</h4>
+          <p>No visible disease.</p>
+        </div>
+        <div class="disease">
+          <h4>⚫ Early Blight</h4>
+          <p>Dark spots, concentric rings.</p>
+        </div>
+        <div class="disease">
+          <h4>🟤 Late Blight</h4>
+          <p>Water-soaked lesions, rapid spread.</p>
+        </div>
+        <div class="disease">
+          <h4>🌸 Powdery Mildew</h4>
+          <p>White powdery coating.</p>
+        </div>
+        <div class="disease">
+          <h4>🔵 Leaf Spot</h4>
+          <p>Small circular spots.</p>
+        </div>
+        <div class="disease">
+          <h4>💛 Nutrient Deficiency</h4>
+          <p>Yellowing / interveinal chlorosis.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    🌾 CropCare • Demo app — train your model for production use
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

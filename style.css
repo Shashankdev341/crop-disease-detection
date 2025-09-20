@@ -1,0 +1,201 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f4f9ff;
+  color: #333;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+nav .container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0077cc;
+}
+
+nav p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+main.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  border-left: 5px solid #0077cc;
+  padding-left: 0.6rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+}
+
+/* ===============================
+   Modern Upload Form Styling
+================================= */
+#uploadForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed #0077cc;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  background: #fdfdfd;
+  transition: all 0.3s ease-in-out;
+}
+
+#uploadForm:hover {
+  background: #f0f8ff;
+  border-color: #005fa3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#fileInput {
+  display: none; /* hide default input */
+}
+
+#uploadForm label {
+  background: #0077cc;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#uploadForm label:hover {
+  background: #005fa3;
+}
+
+#previewContainer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#previewContainer img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#uploadForm button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: linear-gradient(135deg, #0077cc, #00aaff);
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#uploadForm button:hover {
+  background: linear-gradient(135deg, #005fa3, #008ecc);
+  transform: translateY(-2px);
+}
+
+#result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ===============================
+   Right Side Enhancements
+================================= */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  background: #f0f8ff;
+  border-left: 4px solid #0077cc;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #444;
+  transition: transform 0.2s ease;
+}
+
+.info-item:hover {
+  transform: translateX(5px);
+  background: #e6f3ff;
+}
+
+/* Disease Catalog */
+.disease-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.disease {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.disease:hover {
+  background: #f0f8ff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.disease h4 {
+  margin: 0;
+  color: #0077cc;
+  font-size: 1rem;
+}
+
+.disease p {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #666;
+}
